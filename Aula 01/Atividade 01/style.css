@@ -6,12 +6,33 @@ body{
     background-color: #0E0429;
 }
 
+img{
+    filter: drop-shadow(10px 0 20px #04617E);
+    align-items: center;
+    /*display: block; */
+    position: relative;
+    padding: 50px;
+    right: -40%;
+}
+
 footer{
+    background-color: #04617E;
     align-items: center;
     position: relative;
 }
 
-a.insta{
+h2{
+    font-size: medium;
+}
+
+a{
+    position: relative;
+    padding: 20px;
+    color: bisque;
+
+}
+
+/*#a.insta{
     position: relative;
     padding: 20px;
     color: #28165D;
@@ -19,4 +40,4 @@ a.insta{
     border-radius: 5%;
     font-size: 150%;
     right: -100px;
-}
+} */
