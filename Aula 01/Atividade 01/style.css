@@ -13,26 +13,29 @@
         background-color: #0E0429;
 }
 
-    img{
-        max-width: 100%;
-        height: auto;
-        filter: drop-shadow(10px 0 20px #04617E);
-        /*align-items: center;*/
-        position: relative;
+    .sobreMim{
+        flex-direction: column;
+        align-items: center;
         display: flex;
         justify-content: center;
-        padding: 20px;
-        right: -670px;
-}
+    }
+
+    .sobreMim img{
+        align-items: center;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(5px 0 18px #258febb8);
+    }
 
 
-    h1{
+    .sobreMim h1{
         display: flex;
         justify-content: center;
         font-size: 50px;
         font-weight: 900;
         align-items: center;
-        padding: 10px;
+        padding: 30px;
         right: -35%;
 }
 
@@ -44,28 +47,25 @@
 }
 
 
-    .texto p{
+    .texto{
         margin: auto;
         width: 50%;
-        /*border: 3px solid green;*/
-        padding: 10px;
         text-align: left;
-        /*max-width: 100%;*/
-        /*height: 0%;*/
-        /*align-items: center;*/
-        /*text-align: left;*/
-        /*justify-content: center;*/
-        /*font-size: 18px;*/
-        /*display: flex;*/
-        padding: 10px;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        font-size: 18px;
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 60px;
 }
 
 footer{
-    background-color: #04617E;
+    background-color: #04617e;
 }
 .footerContainer{
     width: 100%;
-    padding: 70px 30px 10px;
+    padding: 60px 30px 10px;
 }
 .iconSociais{
     display: flex;
