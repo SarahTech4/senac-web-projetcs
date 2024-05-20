@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #330261;
+    margin-top: 40px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    
+}
+
+#menu {
+    display: none;
+}
+
+label[for = 'menu'] {
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+}
+
+#navMenu {
+    width: 100%;
+}
+
+#navMenu a{
+    display: inline-block;
+    background-color: #330261;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 11px;
+}
+
+#navMenu a:hover {
+    background-color: #2c85ea;
+    transition: 0.5s;
+}
+
+main {
+    width: 88%;
+    margin: 0 auto;
+    padding: 20px 70px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 75px;
+}
+
+#banner h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
+#banner div {
+    background-image: url(/foto-waffle.1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 315px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+#banner p {
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#banner a {
+    background-color: #330261;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#banner a:hover { 
+    background-color: #2c85ea;
+    transition: 0.5s;
+}
+
+
+.tituloCenter {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formatacaoLista {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.formatacaoLista li {
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+#informacoesAdicionais {
+    text-align: center;
+}
+
+#informacoesAdicionais p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+iframe {
+    margin: 20px;
+}
+
+
+@media (max-width: 620px) {
+
+    #navMenu {
+        margin-top: -500px;
+    }
+
+
+    label[for='menu'] {
+        display: block;
+        text-align: left;
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    #menu:checked ~ #navMenu {
+        margin-top: 0px;
+    }
+
+    #navMenu a{
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        color: #2c85ea;
+        margin-top: 0;
+        padding: 10px 0;
+        border-radius: 0;
+        border: 1px solid #330261;
+    }
+
+    #navMenu a:hover {
+        background-color: #2c85ea;
+        color: #fff;
+    }
+
+    iframe {
+        width: 340px;
+    }
+
+
+}
