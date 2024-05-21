@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <script>
+        function toggleMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+        }
+    </script>
+    <main>
+        <div id="imgperfil"></div>
+
+        <p>@sarahTech4</p>
+
+        <div id="troca">
+            <div id="btnfundo"></div>
+            <div id="btn" onclick="toggleMode()"></div>
+        </div>
+
+        <nav id="navlinks">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+        </nav>
+        <nav id="navsocial">
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+        </nav>
+    </main>
+
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+
+</body>
+</html>

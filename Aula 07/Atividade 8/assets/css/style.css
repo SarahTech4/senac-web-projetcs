@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cortexto: black;
+    --fundosite: url(../img/bg-mobile-light.jpg); 
+    --corborda: rgb(0, 0, 0, 0.5);
+    --corbotao: rgb(0, 0, 0, 0.05);
+    --corbotaohover: rgb(0, 0, 0, 0.02);
+    --corbrilho: rgb(0, 0, 0, 0.2);
+    --bgmodo: url(../img/moon-stars.png);
+    --imgperfil: url(../img/fotoperfil-cortada.png); 
+    
+}
+
+.dark {
+    --cortexto: white;
+    --fundosite: url(../img/bg-mobile.jpg); 
+    --corborda: rgb(255, 255, 255, 0.5);
+    --corbotao: rgb(255, 255, 255, 0.05);
+    --corbotaohover: rgb(255, 255, 255, 0.02);
+    --corbrilho: rgb(255, 255, 255, 0.2);
+    --bgmodo: url(../img/Sun-16..png); 
+    --imgperfil: url(../img/fotoperfil-cortada.png);
+
+
+}
+
+body {
+    background: var(--fundosite) no-repeat center center/cover;
+    height: 100vh;
+}
+
+main {
+    width: 90%;
+    max-width: 588px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#imgperfil {
+    margin-top: 64px;
+    height: 150px;
+    width: 150px;
+    background: var(--imgperfil) no-repeat center center/cover;
+    border-radius: 50%
+}
+
+p {
+    color: var(--cortexto);
+    margin: 16px 0;
+}
+
+#troca {
+    width: 64px;
+    margin: 4px auto;
+    position: relative;
+    margin: 16px 0;
+}
+
+#btnfundo {
+    width: 64px;
+    height: 24px;
+    background: var(--corbotao);
+    border: 1px solid var(--corborda);
+    border-radius: 50px;
+
+}
+#btn {
+    width: 32px;
+    height: 32px;
+    background: white var(--bgmodo) no-repeat center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    animation: slide-back 0.4s;
+}
+
+.dark #btn {
+    animation: slide-in 0.4s forwards;
+}
+
+#btn:hover {
+    outline: 8px solid var(--corbrilho);
+}
+
+#navlinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#navlinks a {
+    display: flex;
+    text-decoration: none;
+    background: var(--corborda);
+    border: 1px solid var(--corborda);
+    padding: 16px 24px;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--cortexto);
+    border-radius: 10px;
+    margin-bottom: 16px;
+
+}
+
+#navlinks a:hover {
+    background: var(--corbotaohover);
+    border: 1.5px solid var(--cortexto);
+}
+#navsocial {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#navsocial a{
+    color: var(--cortexto);
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#navsocial a:hover {
+    background: var(--corbrilho);
+
+}
+footer {
+    text-align: center;
+    margin: 64px 0;
+    color: var(--cortexto);
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+
+}
